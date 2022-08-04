@@ -4,6 +4,7 @@ import NewPages from "../components/NewPages";
 import NotFound from "../components/NotFound";
 import userFilms from "../components/userFilms";
 export default new VueRouter({
+  history: "/Project-3//",
   mode: "history",
   routes: [
     {
