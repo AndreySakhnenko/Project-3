@@ -5,6 +5,7 @@ import NotFound from "../components/NotFound";
 import userFilms from "../components/userFilms";
 export default new VueRouter({
   mode: "hash",
+  base: "/Project-3/",
   routes: [
     {
       path: "/",
