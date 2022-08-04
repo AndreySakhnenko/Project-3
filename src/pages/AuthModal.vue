@@ -141,5 +141,5 @@ export default {
 };
 </script>
 <style>
-@import "../assets/styles/style-pages/auth_modal.scss";
+/* @import "../assets/styles/style-pages/auth_modal.scss"; */
 </style>

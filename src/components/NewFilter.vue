@@ -196,5 +196,5 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/new_filter.scss";
+/* @import "../assets/styles/new_filter.scss"; */
 </style>

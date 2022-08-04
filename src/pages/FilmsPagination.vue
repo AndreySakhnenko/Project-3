@@ -85,5 +85,5 @@ export default {
 </script>
 
 <style>
-@import "../assets/styles/style-pages/pagination.scss";
+/* @import "../assets/styles/style-pages/pagination.scss"; */
 </style>

@@ -72,8 +72,5 @@ export default {
   .v-icon {
     display: block;
   }
-  /* #header_search {
-    display: none;
-  } */
 }
 </style>
