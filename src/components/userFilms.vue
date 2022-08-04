@@ -12,7 +12,10 @@
                 v-for="search in searchFilms"
                 :key="search.id"
               >
-                <div class="card">
+                <router-link
+                  class="film_router__link card"
+                  :to="{ name: 'film', params: { id: search.id } }"
+                >
                   <div class="card_img">
                     <img
                       v-if="search.poster_path"
@@ -25,15 +28,10 @@
                       height="295"
                     />
                   </div>
-                  <router-link
-                    class="film_router__link"
-                    :to="{ name: 'film', params: { id: search.id } }"
-                  >
-                    <h3 class="card_title">{{ search.title }}</h3>
-                  </router-link>
+                  <h3 class="card_title">{{ search.title }}</h3>
                   <span>Рейтинг фільма: {{ search.vote_average || 8 }}</span>
                   <span>{{ search.release_date }}</span>
-                </div>
+                </router-link>
               </div>
             </v-row>
           </v-container>

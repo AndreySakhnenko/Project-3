@@ -144,3 +144,9 @@
     color: #ffd700 !important;
   }
 }
+@media (max-width: 450px) {
+  .card_container__pages {
+    max-width: 300px !important;
+    width: 100%;
+  }
+}

@@ -46,7 +46,7 @@ export default {
             "https://api.themoviedb.org/3/movie/popular?api_key=696623e29220dc4a7e31633c86f0dd0d&page=",
         },
         {
-          name: "Ruiting",
+          name: "Rating",
           apiUrl:
             "https://api.themoviedb.org/3/movie/top_rated?api_key=696623e29220dc4a7e31633c86f0dd0d&language=en&page=",
         },
@@ -75,7 +75,7 @@ export default {
           this.getFilm(this.tabsSettings[0].apiUrl, page);
         } else if (el.name == "Popularity" && el.isActive) {
           this.getFilm(this.tabsSettings[1].apiUrl, page);
-        } else if (el.name == "Ruiting" && el.isActive) {
+        } else if (el.name == "Rating" && el.isActive) {
           this.getFilm(this.tabsSettings[2].apiUrl, page);
         }
       });

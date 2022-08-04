@@ -8,7 +8,9 @@
       v-model="searchValue"
       @keyup.enter="search"
     />
-    <v-icon @click="isActiveSearch">mdi-magnify</v-icon>
+    <label for="header_search" @click="isActiveSearch">
+      <v-icon>mdi-magnify</v-icon>
+    </label>
   </div>
 </template>
 <script>

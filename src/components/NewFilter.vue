@@ -30,19 +30,17 @@
                 v-for="film in featureFilms"
                 :key="film.id"
               >
-                <div class="card">
+                <router-link
+                  class="film_router__link card"
+                  :to="{ name: 'film', params: { id: film.id } }"
+                >
                   <div class="card_img">
                     <img :src="ima(film.poster_path)" />
                   </div>
-                  <router-link
-                    class="film_router__link"
-                    :to="{ name: 'film', params: { id: film.id } }"
-                  >
-                    <h3 class="card_title">{{ film.title }}</h3>
-                  </router-link>
+                  <h3 class="card_title">{{ film.title }}</h3>
                   <span>Рейтинг фільма: {{ film.vote_average }}</span>
                   <span>{{ film.release_date }}</span>
-                </div>
+                </router-link>
               </div>
             </v-row>
           </v-container>
@@ -53,42 +51,38 @@
                 v-for="popularity in popularityFilms"
                 :key="popularity.id"
               >
-                <div class="card">
+                <router-link
+                  class="film_router__link card"
+                  :to="{ name: 'film', params: { id: popularity.id } }"
+                >
                   <div class="card_img">
                     <img :src="ima(popularity.poster_path)" />
                   </div>
-                  <router-link
-                    class="film_router__link"
-                    :to="{ name: 'film', params: { id: popularity.id } }"
-                  >
-                    <h3 class="card_title">{{ popularity.title }}</h3>
-                  </router-link>
+                  <h3 class="card_title">{{ popularity.title }}</h3>
                   <span>Рейтинг фільма: {{ popularity.vote_average }}</span>
                   <span>{{ popularity.release_date }}</span>
-                </div>
+                </router-link>
               </div>
             </v-row>
           </v-container>
           <v-container class="container" v-else>
-            <v-row class="rows_container" v-if="ruitingFilms.length">
+            <v-row class="rows_container" v-if="ratingFilms.length">
               <div
                 class="card_container"
-                v-for="ruiting in ruitingFilms"
-                :key="ruiting.id"
+                v-for="rating in ratingFilms"
+                :key="rating.id"
               >
-                <div class="card">
+                <router-link
+                  class="film_router__link card"
+                  :to="{ name: 'film', params: { id: rating.id } }"
+                >
                   <div class="card_img">
-                    <img :src="ima(ruiting.poster_path)" />
+                    <img :src="ima(rating.poster_path)" />
                   </div>
-                  <router-link
-                    class="film_router__link"
-                    :to="{ name: 'film', params: { id: ruiting.id } }"
-                  >
-                    <h3 class="card_title">{{ ruiting.title }}</h3>
-                  </router-link>
-                  <span>Рейтинг фільма: {{ ruiting.vote_average }}</span>
-                  <span>{{ ruiting.release_date }}</span>
-                </div>
+                  <h3 class="card_title">{{ rating.title }}</h3>
+                  <span>Рейтинг фі121льма: {{ rating.vote_average }}</span>
+                  <span>{{ rating.release_date }}</span>
+                </router-link>
               </div>
             </v-row>
           </v-container>
@@ -124,13 +118,13 @@ export default {
           isActive: false,
         },
         {
-          name: "Ruiting",
+          name: "Rating",
           isActive: false,
         },
       ],
       burgerMenu: false,
       isActive: true,
-      ruitingFilms: [],
+      ratingFilms: [],
       popularityFilms: [],
       featureFilms: [],
       imagess: "https://image.tmdb.org/t/p/w300",
@@ -159,8 +153,8 @@ export default {
         } else if (el.isActive && el.name == "Popularity") {
           this.popularityFilms = secondPagesFilms;
         } else {
-          this.ruitingFilms = secondPagesFilms;
-          console.log(this.ruitingFilms);
+          this.ratingFilms = secondPagesFilms;
+          console.log(this.ratingFilms);
         }
       }),
         console.log("cgesdf", secondPagesFilms);
@@ -189,7 +183,7 @@ export default {
       "https://api.themoviedb.org/3/movie/top_rated?api_key=696623e29220dc4a7e31633c86f0dd0d&page=3&language=ru"
     )
       .then((data) => data.json())
-      .then((data) => (this.ruitingFilms = data.results))
+      .then((data) => (this.ratingFilms = data.results))
       .catch((e) => console.log(e.message));
   },
 };
