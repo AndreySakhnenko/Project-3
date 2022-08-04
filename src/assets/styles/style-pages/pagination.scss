@@ -1,0 +1,13 @@
+.v-pagination__item {
+  background-color: #ffd700 !important;
+}
+.v-pagination__navigation {
+  background-color: #2e859e !important;
+}
+.theme--light.v-application {
+  color: #ffd700;
+}
+.theme--light.v-pagination .v-pagination__item--active{
+  color: #ffd700;
+  background-color: #2e859e;
+}

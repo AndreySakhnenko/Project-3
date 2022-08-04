@@ -1,0 +1,142 @@
+.name_filter {
+  color: #ffd700 !important;
+  caret-color: #ffd700 !important;
+  font-family: "Material Design Icons";
+}
+
+.content_filter {
+  background-color: #333 !important;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #333 !important;
+}
+
+.rows_container {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 10px;
+}
+
+.card > span {
+  padding: 0 10px;
+  color: #2e859e;
+  font-size: 14px;
+}
+
+.card_img > img {
+  width: 100%;
+}
+
+.card_title {
+  font-size: 17px;
+  padding: 0 10px;
+  color: #ffd700 !important;
+}
+
+.v-tab:before {
+  background-color: #ffd700 !important;
+}
+
+.v-tabs > .v-tabs-bar {
+  background-color: #333 !important;
+}
+
+.theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) {
+  color: white !important;
+}
+
+.v-tabs-slider-wrapper {
+  color: #ffd700;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.hamburger .line {
+  display: none;
+  width: 40px;
+  height: 3px;
+  background-color: #ffd700;
+  margin-block: 10px;
+  border-radius: 4px;
+  transition: transform 0.5s;
+  opacity: 0.25s;
+}
+
+.hamburger.active .line:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+@media (max-width: 960px) {
+  .rows_container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 20px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .rows_container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px;
+    padding-top: 10px;
+  }
+  .v-slide-group__prev.v-slide-group__prev--disabled {
+    display: none !important;
+  }
+  .card {
+    text-align: center;
+  }
+  .hamburger .line {
+    display: block;
+  }
+  .name_filter {
+    display: none;
+  }
+  .name_filter.active {
+    display: flex !important;
+  }
+}
+@media (max-width: 380px) {
+  .name_filter {
+    padding: 10px;
+  }
+  .rows_container {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 20px;
+    padding-top: 10px;
+  }
+  .v-slide-group__prev.v-slide-group__prev--disabled {
+    display: none !important;
+  }
+}

@@ -1,0 +1,38 @@
+header {
+  background-color: #333 !important;
+}
+.v-toolbar__content{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header_logo__title {
+  font-size: 40px;
+  font-family: "Material Design Icons";
+  padding: 0 10px;
+}
+.film_router__link {
+  text-decoration: none;
+  color: #ffd700 !important;
+}
+.v-application.primary {
+  background-color: #ccc !important;
+}
+.theme--dark.v-sheet {
+  color: #ffd700 !important;
+}
+.v-main__wrap {
+  background-color: black !important;
+}
+.theme--dark {
+  color: #ffd700 !important;
+}
+.v-input__slot:before {
+  border-color: #ffd700 !important;
+}
+.theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
+  color: #ffd700;
+}
+.logo_icons{
+  cursor: pointer;
+}

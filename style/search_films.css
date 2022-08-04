@@ -1,0 +1,36 @@
+#header_search {
+  display: block;
+  border: none;
+  border-bottom: 2px solid #ffd700;
+  padding: 5px 10px;
+  color: #ffd700;
+  outline: none;
+}
+
+.search_btn {
+  padding: 10px;
+  border: none;
+  color: #ffd700;
+  font-size: 20px;
+}
+
+.search_films {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 0 10px;
+  align-content: center;
+}
+
+.v-icon {
+  color: #ffd700;
+}
+
+@media (max-width: 600px) {
+  .v-icon {
+    display: block;
+  }
+  /* #header_search {
+    display: none;
+  } */
+}

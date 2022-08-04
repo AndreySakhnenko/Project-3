@@ -1,0 +1,61 @@
+.header_block {
+  display: flex;
+  align-items: center;
+}
+
+.header_title {
+  padding: 0 10px;
+}
+
+.header_span__span {
+  padding: 0 10px;
+}
+
+.v-size--default {
+  padding: 0 10px !important;
+}
+
+.my_form {
+  display: block;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%);
+  position: absolute;
+  width: 404px;
+  height: auto;
+  background: #222d33;
+  border: 1px solid #ffd700;
+  padding: 20px;
+}
+
+.modal_title {
+  text-align: center;
+  font-size: 40px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.modal_form {
+  gap: 20px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.modal_input {
+  display: block;
+  border: none;
+  padding: 5px 10px;
+  color: #ffd700;
+  outline: none;
+}
+
+.modal_btn {
+  border: 1px solid #ffd700;
+  margin-right: 10px;
+}
+
+.modal_btn-1 {
+  float: right;
+}
