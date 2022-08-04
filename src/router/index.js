@@ -3,8 +3,9 @@ import NewFilter from "../components/NewFilter";
 import NewPages from "../components/NewPages";
 import NotFound from "../components/NotFound";
 import userFilms from "../components/userFilms";
+import createWebHistory from "vue-router";
 export default new VueRouter({
-  history: "/Project-3//",
+  history: createWebHistory("/Project-3/"),
   mode: "history",
   routes: [
     {
