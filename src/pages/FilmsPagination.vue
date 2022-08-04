@@ -84,6 +84,4 @@ export default {
 };
 </script>
 
-<style>
-/* @import "../assets/styles/style-pages/pagination.scss"; */
-</style>
+<style></style>

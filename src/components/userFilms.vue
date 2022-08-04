@@ -81,6 +81,4 @@ export default {
 };
 </script>
 
-<style scoped>
-/* @import "../assets/styles/user_films.scss"; */
-</style>
+<style scoped></style>

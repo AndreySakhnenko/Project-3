@@ -127,6 +127,4 @@ export default {
 };
 </script>
 
-<style scoped>
-/* @import "../assets/styles/new_pages.scss"; */
-</style>
+<style scoped></style>

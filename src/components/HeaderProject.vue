@@ -17,6 +17,4 @@ export default {
   },
 };
 </script>
-<style>
-/* @import "../assets/styles/header.scss"; */
-</style>
+<style></style>
