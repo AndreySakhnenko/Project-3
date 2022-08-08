@@ -26,6 +26,14 @@
   padding: 20px;
 }
 
+.modal_btn__first {
+  border: none !important;
+  transition: all s linear !important;
+  margin: 0 !important;
+}
+.modal_btn__first:hover {
+  border: 1px solid #ffd700 !important;
+}
 .modal_title {
   text-align: center;
   font-size: 40px;

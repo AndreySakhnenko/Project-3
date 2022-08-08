@@ -13,13 +13,13 @@
           Tagline:<span>{{ oneFilm.tagline }}</span>
         </p>
         <p class="film_description__text">
-          Countri:<span>{{ oneFilm.production_countries[0].name }}</span>
+          Country:<span>{{ oneFilm.production_countries[0].name }}</span>
         </p>
         <p class="film_description__text">
           Runtime:<span>{{ oneFilm.runtime }}min</span>
         </p>
         <p class="film_description__text">
-          Жанр:<span>{{ oneFilm.genres[0].name }}</span>
+          Genre:<span>{{ oneFilm.genres[0].name }}</span>
         </p>
         <p class="film_description__text">
           Budget:<span>{{ oneFilm.budget }}$</span>

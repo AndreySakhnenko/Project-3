@@ -38,7 +38,7 @@
                     <img :src="ima(film.poster_path)" />
                   </div>
                   <h3 class="card_title">{{ film.title }}</h3>
-                  <span>Рейтинг фільма: {{ film.vote_average }}</span>
+                  <span>Film rating: {{ film.vote_average }}</span>
                   <span>{{ film.release_date }}</span>
                 </router-link>
               </div>
@@ -59,7 +59,7 @@
                     <img :src="ima(popularity.poster_path)" />
                   </div>
                   <h3 class="card_title">{{ popularity.title }}</h3>
-                  <span>Рейтинг фільма: {{ popularity.vote_average }}</span>
+                  <span>Film rating: {{ popularity.vote_average }}</span>
                   <span>{{ popularity.release_date }}</span>
                 </router-link>
               </div>

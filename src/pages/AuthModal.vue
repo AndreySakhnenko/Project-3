@@ -10,6 +10,7 @@
       Sing out
     </button>
     <v-btn
+      class="modal_btn__first"
       href="#"
       v-if="activeUser === 'User'"
       text
@@ -140,4 +141,4 @@ export default {
   },
 };
 </script>
-<style lang="scss"></style>
+<style lang="scss" scoped></style>

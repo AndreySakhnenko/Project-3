@@ -29,7 +29,7 @@
                     />
                   </div>
                   <h3 class="card_title">{{ search.title }}</h3>
-                  <span>Рейтинг фільма: {{ search.vote_average || 8 }}</span>
+                  <span>Film rating: {{ search.vote_average || 8 }}</span>
                   <span>{{ search.release_date }}</span>
                 </router-link>
               </div>
