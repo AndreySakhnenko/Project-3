@@ -3,11 +3,11 @@
   width: 100%;
   margin: 0 auto;
   background-color: #333 !important;
-  &_rows{
+  &_rows {
     display: grid !important;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding-top: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-top: 10px;
   }
 }
 .content_filter {
@@ -27,19 +27,19 @@
   border: 1px solid rgba(255, 255, 255, 0.25);
   padding-bottom: 10px;
   & > span {
-  padding: 0 10px;
-  color: #2e859e;
-  font-size: 14px;
-}
-& > img {
-  width: 100%;
-  cursor: pointer;
-}
-&_title {
-  font-size: 17px;
-  padding: 0 10px;
-  color: #ffd700 !important;
-}
+    padding: 0 10px;
+    color: #2e859e;
+    font-size: 14px;
+  }
+  & > img {
+    width: 100%;
+    cursor: pointer;
+  }
+  &_title {
+    font-size: 17px;
+    padding: 0 10px;
+    color: #ffd700 !important;
+  }
 }
 .v-tab:before {
   background-color: #ffd700 !important;
@@ -99,6 +99,9 @@
   }
   .card {
     text-align: center;
+    & > span {
+      font-size: 20px !important;
+    }
   }
   .hamburger .line {
     display: block;

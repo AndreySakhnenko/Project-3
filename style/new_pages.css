@@ -109,6 +109,8 @@
 
 .v-icon {
   color: #ffd700 !important;
+  transition: 1s ease-in-out;
+  cursor: pointer;
 }
 .v-icon:hover {
   color: #2e859e !important;
