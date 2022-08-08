@@ -6,9 +6,9 @@
         <SearchFilms @searchCuery="searchCuery" />
         <v-tab-item v-for="n in 1" :key="n">
           <v-container class="container" v-if="n == 1">
-            <v-row class="rows_container" v-if="searchFilms.length">
+            <v-row class="container_rows" v-if="searchFilms.length">
               <div
-                class="card_container"
+                class="container_card"
                 v-for="search in searchFilms"
                 :key="search.id"
               >
@@ -79,4 +79,4 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped></style>

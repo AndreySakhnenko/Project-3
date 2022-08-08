@@ -1,15 +1,17 @@
 header {
   background-color: #333 !important;
 }
+.header{
+  &_logo__title {
+    font-size: 40px !important;
+    font-family: "Material Design Icons" !important;
+    padding: 0 10px !important;
+  }
+}
 .v-toolbar__content {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-}
-.header_logo__title {
-  font-size: 40px;
-  font-family: "Material Design Icons";
-  padding: 0 10px;
 }
 .film_router__link {
   text-decoration: none;

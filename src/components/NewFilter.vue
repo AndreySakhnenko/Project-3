@@ -24,9 +24,9 @@
         <SearchFilms />
         <v-tab-item v-for="n in 3" :key="n">
           <v-container class="container" v-if="n == 1">
-            <v-row class="rows_container" v-if="featureFilms.length">
+            <v-row class="container_rows" v-if="featureFilms.length">
               <div
-                class="card_container"
+                class="container_card"
                 v-for="film in featureFilms"
                 :key="film.id"
               >
@@ -157,7 +157,7 @@ export default {
           console.log(this.ratingFilms);
         }
       }),
-        console.log("cgesdf", secondPagesFilms);
+        console.log("text", secondPagesFilms);
     },
     ima(id) {
       return this.imagess + id;
@@ -189,4 +189,4 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped></style>

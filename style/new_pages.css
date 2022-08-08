@@ -14,33 +14,28 @@
   margin: 0 auto;
   padding: 10px;
 }
-
 .film_title {
   font-size: 30px;
   font-weight: 700;
   color: #ffd700;
   margin-bottom: 10px;
 }
-
 .film_content {
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
 }
-
 .film_image {
   max-width: 300px;
   width: 100%;
   border: 1px solid #ffd700;
 }
-
 .film_image > img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .film_description {
   max-width: 500px;
   width: 100%;
@@ -48,17 +43,14 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
 .film_description__text {
   color: white;
   font-size: 20px;
 }
-
 .film_description__text > span {
   margin-left: 10px;
   color: #ffd700;
 }
-
 .film_text {
   width: 100%;
   padding: 5px;
@@ -66,18 +58,25 @@
   margin-bottom: 30px;
   color: white;
 }
-
 .film_video__block {
   width: 100%;
   min-height: 400px;
 }
-
 .film_video {
   width: 100%;
   height: 500px;
   box-sizing: border-box;
   padding: 10px;
   border: 1px solid #ffd700;
+}
+.film_similar {
+  border: 1px solid #ffd700;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 320px;
+  padding: 10px;
+  margin-bottom: 40px;
 }
 
 .similar_title {
@@ -89,31 +88,18 @@
   padding: 15px;
 }
 
-.film_similar {
-  border: 1px solid #ffd700;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 320px;
-  padding: 10px;
-  margin-bottom: 40px;
-}
-
 .card_container__pages {
   max-width: 150px;
   width: 100%;
   padding: 5px;
 }
-
 .card_pages {
   border: 1px solid #2e859e;
   height: 100%;
 }
-
 .card_img__pages {
   height: 100%;
 }
-
 .card_img__pages > img {
   width: 100%;
   height: 100%;

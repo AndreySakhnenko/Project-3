@@ -1,25 +1,24 @@
-.name_filter {
-  color: #ffd700 !important;
-  caret-color: #ffd700 !important;
-  font-family: "Material Design Icons";
-}
-
-.content_filter {
-  background-color: #333 !important;
-}
-
 .container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   background-color: #333 !important;
 }
-
-.rows_container {
+.container_rows {
   display: grid !important;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding-top: 10px;
+}
+
+.content_filter {
+  background-color: #333 !important;
+}
+
+.name_filter {
+  color: #ffd700 !important;
+  caret-color: #ffd700 !important;
+  font-family: "Material Design Icons";
 }
 
 .card {
@@ -31,18 +30,15 @@
   border: 1px solid rgba(255, 255, 255, 0.25);
   padding-bottom: 10px;
 }
-
 .card > span {
   padding: 0 10px;
   color: #2e859e;
   font-size: 14px;
 }
-
-.card_img > img {
+.card > img {
   width: 100%;
   cursor: pointer;
 }
-
 .card_title {
   font-size: 17px;
   padding: 0 10px;
@@ -97,7 +93,7 @@
 }
 
 @media (max-width: 960px) {
-  .rows_container {
+  .container_rows {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 20px;
@@ -105,7 +101,7 @@
   }
 }
 @media (max-width: 600px) {
-  .rows_container {
+  .container_rows {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 20px;
@@ -131,7 +127,7 @@
   .name_filter {
     padding: 10px;
   }
-  .rows_container {
+  .container_rows {
     display: grid !important;
     grid-template-columns: repeat(1, 1fr) !important;
     gap: 20px;
