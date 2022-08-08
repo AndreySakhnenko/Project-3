@@ -45,9 +45,9 @@
             </v-row>
           </v-container>
           <v-container class="container" v-else-if="n == 2">
-            <v-row class="rows_container" v-if="popularityFilms.length">
+            <v-row class="container_rows" v-if="popularityFilms.length">
               <div
-                class="card_container"
+                class="container_card"
                 v-for="popularity in popularityFilms"
                 :key="popularity.id"
               >
@@ -66,9 +66,9 @@
             </v-row>
           </v-container>
           <v-container class="container" v-else>
-            <v-row class="rows_container" v-if="ratingFilms.length">
+            <v-row class="container_rows" v-if="ratingFilms.length">
               <div
-                class="card_container"
+                class="container_card"
                 v-for="rating in ratingFilms"
                 :key="rating.id"
               >
